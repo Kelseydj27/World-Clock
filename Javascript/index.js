@@ -7,7 +7,7 @@ function updateTime() {
 
     losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
     losAngelesTimeElement.innerHTML = losAngelesTime.format(
-      "h:m:ss [<small>]A[</small>]"
+      "hh:mm:ss [<small>]A[</small>]"
     );
   }
 
@@ -18,7 +18,7 @@ function updateTime() {
 
   sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
   sydneyTimeElement.innerHTML = sydneyTime.format(
-    "h:m:ss [<small>]A[</small>]"
+    "hh:mm:ss [<small>]A[</small>]"
   );
 }
 
@@ -36,7 +36,7 @@ function updateCity(event) {
       <h2>${cityName}</h2>
       <div class="date">${cityTime.format("MMMM	Do YYYY")}</div>
     </div>
-    <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    <div class="time">${cityTime.format("hh:mm:ss")} <small>${cityTime.format(
     "A"
   )}</small></div>
   </div>
